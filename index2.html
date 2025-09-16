@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chờ Đợi Có Đáng Sợ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="toggle-music">🔊 Bật / Tắt Nhạc</button>
+
+    <!--Video nền-->
+    <video autoplay muted playsinline loop id="bg-video">
+      <source src="./video2.mp4" type="video/mp4" />
+    </video>
+
+    <!--Nhac nen-->
+    <audio id="bg-music" autoplay loop>
+      <source src="./music2.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!--Noi dung chinh-->
+    <div class="content2">
+      <h1>Thật sự thì trong tình yêu...</h1>
+      <h1>Chờ đợi không phải là...</h1>
+      <h1>"Điều đáng sợ nhất"</h1>
+      <h1>Mà điều đáng sợ nhất...</h1>
+      <h1>Là phải chờ đợi...</h1>
+      <h1>"Đến Bao giờ."</h1>
+    </div>
+
+    <!--Chuyen trang-->
+    <button id="next-page">
+      <i class="fa-solid fa-forward-step"></i>
+    </button>
+
+    <!--Trang truoc-->
+    <button id="prev-page">
+      <i class="fa-solid fa-backward-step"></i>
+    </button>
+    <!-- JavaScript để bật nhạc tự động -->
+    <script src="script.js"></script>
+  </body>
+</html>
