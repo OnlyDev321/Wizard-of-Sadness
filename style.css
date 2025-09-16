@@ -48,8 +48,9 @@ html {
 
 .content2 {
   position: absolute;
-  top: 30%;
-  left: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   line-height: 1.5;
   text-shadow: 0 0 10px black;
@@ -63,7 +64,6 @@ html {
 .content2.show {
   opacity: 1;
   filter: blur(0);
-  transform: translateY(0);
 }
 
 .content h1,

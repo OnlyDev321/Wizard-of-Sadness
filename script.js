@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Hiển thị toàn bộ .content2 sau 140 giây
+  // Hiển thị toàn bộ .content2 sau 45 giây
   const content2Container = document.querySelector(".content2");
   if (content2Container) {
     setTimeout(() => {
       content2Container.classList.add("show");
-    }, 140 * 1000);
+    }, 20 * 1000);
   }
 });
