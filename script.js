@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const music = document.getElementById("bg-music");
   const toggleBtn = document.getElementById("toggle-music");
+  const linkPageArray = ["index.html", "index2.html", "index3.html"];
 
   // Bắt buộc có 1 hành động người dùng mới cho phép phát nhạc
   const tryPlay = () => {
@@ -23,21 +24,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // next trang và quay về trước trang
+  const currentPage = window.location.pathname.split("/").pop();
+  let currentIndex = linkPageArray.indexOf(currentPage);
+
+  //next trang
   const nextPageBtn = document.getElementById("next-page");
   if (nextPageBtn) {
     nextPageBtn.addEventListener("click", function () {
-      window.location.href = "index2.html";
+      if (currentIndex < linkPageArray.length - 1) {
+        currentIndex++;
+        window.location.href = linkPageArray[currentIndex];
+      }
     });
   }
 
+  //prev trang
   const prevPageBtn = document.getElementById("prev-page");
   if (prevPageBtn) {
     prevPageBtn.addEventListener("click", function () {
-      window.location.href = "index.html";
+      if (currentIndex > 0) {
+        currentIndex--;
+        window.location.href = linkPageArray[currentIndex];
+      }
     });
   }
 
-  // Hiển thị toàn bộ .content2 sau 45 giây
+  // Hiển thị toàn bộ .content2 sau 20 giây
   const content2Container = document.querySelector(".content2");
   if (content2Container) {
     setTimeout(() => {
