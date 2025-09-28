@@ -127,15 +127,16 @@ html {
 
 #toggle-music {
   position: absolute;
-  bottom: 12%;
+  bottom: 9%;
   right: 4%;
-  padding: 10px 20px;
+  padding: 1% 2%;
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
-  border-radius: 8px;
+  border-radius: 200px;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 #next-page {
@@ -147,7 +148,7 @@ html {
   border: none;
   background-color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 200px;
 }
 
 #prev-page {
@@ -159,5 +160,14 @@ html {
   border: none;
   background-color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 200px;
+}
+
+#next-page:hover,
+#prev-page:hover,
+#toggle-music:hover {
+  background-color: rgb(255, 255, 255, 0.9);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
 }
