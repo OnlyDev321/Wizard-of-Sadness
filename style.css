@@ -74,6 +74,7 @@ html {
   line-height: 1.5;
   text-shadow: 0 0 10px black;
   animation: fadeInUp3 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: none;
 }
 
 .content h1,
