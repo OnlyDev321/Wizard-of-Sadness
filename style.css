@@ -126,8 +126,8 @@ html {
 
 #toggle-music {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 6%;
+  right: 4%;
   padding: 10px 20px;
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.8);
