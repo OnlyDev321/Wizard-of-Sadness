@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call of Silence</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="toggle-music">🔊 Bật / Tắt Nhạc</button>
+
+    <!-- Video nền -->
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="video.mp4" type="video/mp4" />
+      Trình duyệt của bạn không hỗ trợ video HTML5.
+    </video>
+
+    <!-- Âm nhạc nền -->
+    <audio id="bg-music" autoplay loop>
+      <source src="music.mp3" type="audio/mpeg" />
+      Trình duyệt của bạn không hỗ trợ audio HTML5.
+    </audio>
+
+    <!-- Nội dung chính -->
+    <div class="content">
+      <h1>Hãy cảm nhận nỗi đau.</h1>
+      <h1>Hãy suy nghẫm về nỗi đau.</h1>
+      <h1>Hãy học cách chấp nhận nó.</h1>
+      <h1>Để hiểu thêm về nó.</h1>
+    </div>
+
+    <!--Chuyển trang-->
+    <button id="next-page">
+      <i class="fa-solid fa-forward-step"></i>
+    </button>
+
+    <!-- JavaScript để bật nhạc tự động -->
+    <script src="script.js"></script>
+  </body>
+</html>
