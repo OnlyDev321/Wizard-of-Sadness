@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buông Xuôi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="toggle-music">🔊 Bật / Tắt Nhạc</button>
+    <!-- video nen -->
+    <video autoplay muted loop playsinline id="bg-video">
+      <!-- <source src="./video_new3.mp4" type="video/mp4" /> -->
+      <source src="./video4.mp4" type="video/mp4" />
+    </video>
+
+    <!-- nhac nen  -->
+    <audio id="bg-music" autoplay loop>
+      <source src="./music4.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- noi dung chinh  -->
+    <div class="content3">
+      <h1>Liệu Có Giây Phút Nào</h1>
+      <h1>Người Xót Anh Không Vậy...</h1>
+    </div>
+
+    <!-- chuyen trang  -->
+    <button id="next-page">
+      <i class="fa-solid fa-forward-step"></i>
+    </button>
+
+    <!-- trang truoc  -->
+    <button id="prev-page">
+      <i class="fa-solid fa-backward-step"></i>
+    </button>
+    <!-- javascript  -->
+    <script src="script.js"></script>
+  </body>
+</html>

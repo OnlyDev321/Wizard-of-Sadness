@@ -2,7 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const music = document.getElementById("bg-music");
   const video = document.getElementById("bg-video");
   const toggleBtn = document.getElementById("toggle-music");
-  const linkPageArray = ["index.html", "index2.html", "index3.html"];
+  const linkPageArray = [
+    "index.html",
+    "index2.html",
+    "index3.html",
+    "index4.html",
+  ];
 
   // Đảm bảo thuộc tính tương thích di động trước khi play
   if (video) {
