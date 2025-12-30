@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "index2.html",
     "index3.html",
     "index4.html",
+    "index5.html",
   ];
 
   // Đảm bảo thuộc tính tương thích di động trước khi play
